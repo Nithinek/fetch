@@ -1,0 +1,25 @@
+<!-- card  -->
+<!-- <pre>{{cards | json}}</pre> -->
+<div class="container">
+    <h4 class="text-danger text-center m-3"></h4>
+    <div class="row">
+        <div class="col-md-6" *ngFor="let card of user">
+            <div class="card mt-5">
+                <div class="card-body p-5">
+                    <div class="row">
+                        <div class="col-4">
+                          <img class="image" src="https://www.freeiconspng.com/uploads/blue-user-head-png-18.png" alt="" width="200px" height="200px">
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush m-3">
+                        <li class="list-group-item">Id :{{card.id}}</li>
+                        <li class="list-group-item">USER ID : {{card.userId}}</li>
+                        <li class="list-group-item">TITLE : {{card.title}}</li>
+                        <li class="list-group-item" style="text-align:justify">BODY : {{card.body}}</li>
+                      </ul>
+                </div>
+               
+              </div>
+        </div>
+    </div>
+</div>
